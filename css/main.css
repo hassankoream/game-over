@@ -1,0 +1,256 @@
+/*  start global */
+:root {
+    --color-white: #fff;
+    --seconde-color: #32383e;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+    background-color: #272B30;
+    font-family: cursive;
+}
+
+a,
+span {
+    display: inline-block;
+}
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/*  end global */
+
+/* start header */
+
+.header {
+    background-image: url(https://routeegy.github.io/GameOOP/assets/images/wraper.png);
+    background-position: center;
+    background-size: cover;
+
+    height: 200px;
+
+}
+
+/* end header */
+/* start nav */
+
+
+.navbar {
+    background-color: #3A497B;
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.5);
+
+
+}
+
+.navbar-nav a {
+
+
+    transition: all 0.3s;
+}
+
+.navbar-nav li {
+    margin-inline: 10px;
+    font-size: 0.7rem;
+    color: #fff;
+
+
+
+}
+
+.navbar-nav a:hover {
+    color: #0099CC;
+
+
+}
+
+.navbar-nav .my-active {
+    color: #0099CC;
+}
+
+.nerko-one-regular {}
+
+.nav-brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.nav-brand img {
+    width: 40px;
+
+}
+
+/* end nav */
+/* start home */
+.inner-content {
+    border: 1px rgba(0, 0, 0, 0.2) solid;
+}
+
+.card-group {
+    border: 1px rgba(0, 0, 0, 0.2) solid;
+    border-top: none;
+
+}
+
+.inner-content {
+    filter: saturate(30%);
+    transition: all 0.3s;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.inner-content:hover {
+    filter: saturate(100%);
+}
+
+.inner-content span {
+    padding: 1px 6px;
+
+}
+
+.bg-second {
+    background-color: var(--seconde-color);
+}
+
+.card-group {
+    font-size: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    height: 30px;
+}
+
+.my-card {
+    transition: all 0.6s;
+}
+
+.my-card:hover {
+    transform: scale(1.05);
+}
+
+.games-list {}
+
+.w-80 {
+    width: 80%;
+}
+
+.my-navlink,
+.fa-xmark {
+    cursor: pointer;
+}
+
+.fixed-height {
+    height: 90px;
+    object-fit: cover;
+}
+
+.card-title h6 {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.card-para {
+    white-space: normal;
+    /* Ensure text wraps naturally */
+    /* overflow: visible; Ensure overflow is visible */
+}
+
+.fa-xmark {
+    color: gray;
+    transition: all 0.3s;
+}
+
+.fa-xmark:hover {
+    color: var(--color-white);
+
+}
+
+.game-info {
+    background-color: #0DCAF0;
+    font-size: 12px;
+    font-weight: 700;
+
+}
+
+.my-btn:focus {
+    box-shadow: none !important;
+
+}
+
+.loader {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+.loader::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border-left: 4px solid #FF3D00;
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.loader-overly{
+   
+    position: absolute;
+    inset: 0 0 0 0;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 99;
+
+    
+}
+.loader{
+    z-index: 999;
+
+}
+.loader-section{
+    position: absolute;
+    inset: 0 0 0 0;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 99;
+  
+}
+/* end home */
